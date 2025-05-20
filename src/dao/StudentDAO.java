@@ -45,7 +45,7 @@ public class StudentDAO {
 
     //학생 student_ID로 학생 인증(로그인 용) 기능 만들기
     public Student authenicateStudent(String studentId) throws SQLException{
-        String sql = "SELECT * FROM students where students_id = ?";
+        String sql = "SELECT * FROM students where student_id = ?";
 
         try(Connection conn = DatabaseUtil.getconnection();
             PreparedStatement pstmt = conn.prepareStatement(sql)) {
