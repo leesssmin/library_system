@@ -10,7 +10,7 @@ import java.util.List;
 public class StudentDAO {
 
     // 새 학생을 데이터베이스에 추가하는 기능
-    public void adsStudent(Student student) throws SQLException{
+    public void addStudent(Student student) throws SQLException{
         // insert 쿼리문
         String sql = "INSERT INTO student (name, student_id)" +
                 "VALUES ( ?, ?)";
